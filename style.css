@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant&display=swap');
+
+
+.start{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url("images/note.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top-center;
+    color:white; 
+    position: relative;
+}
+
+.intro{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+width: 100%;
+}
+
+.start .intro{
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 50px;
+justify-content: flex-start;
+}
+
+.intro h1{
+	font-family: 'Assistant', sans-serif;
+	font-weight: bold;
+	font-size: 3.5rem;
+	position: relative;
+	display: block;	
+	color:transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+.intro h1:nth-child(1){
+	animation-delay: 1s;
+}
+
+.intro h1:nth-child(2){
+	animation-delay: 2s;
+}
+
+.intro h1:nth-child(3){
+	animation: text_reveal_name .5s ease forwards;
+	animation-delay: 3s;
+}
+.intro h1 span{
+position: absolute;
+top:0;
+left: 0;
+height: 100%;
+width:0;
+background-color: #008080;
+animation:text_reveal_box 1s ease;
+animation-delay: 3s;
+}
+
+.intro h1:nth-child(1) span{
+
+animation-delay: .5s;
+}
+
+.intro h1:nth-child(2) span{
+
+animation-delay: 1.5s;
+}
+
+.intro h1:nth-child(3) span{
+animation-delay: 2.5s;
+	
+}
+
+.intro .port-btn{
+	padding: 10px 30px;
+	display: inline-block;
+	color: white;
+	background-color: transparent;
+	border: 2px solid #008080;
+	transition: .3 ease;
+	transition-property: background-color, color, font-weight;
+	animation-delay: 2s;
+}
+
+.intro .port-btn:hover{
+background-color: white;
+color:#008080;
+font-weight: bold: 
+}
+
+/*keyframe*/
+@keyframes text_reveal_box{
+	50%{
+		width: 100%;
+		left:0;
+	}
+
+	100%{
+		width:0;
+		left:100%;
+	}
+}
+
+@keyframes text_reveal{
+	100%{
+		color:white;
+	}
+}
+
+@keyframes text_reveal_name{
+	100%{
+		color:#008080;
+	}
+}
+/*end keyframe*/
+
+#services .service{
+	flex-direction: column;
+	text-align: center;
+}
