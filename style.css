@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .start{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url("images/note.jpg");
@@ -120,4 +120,65 @@ font-weight: bold:
 #services .service{
 	flex-direction: column;
 	text-align: center;
+	max-height:1500px;
+	margin: 0 auto;
+	padding: 100px 0;
 }
+
+.service .service-title{
+	font-size: 3.0rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5rem;
+    font-weight:bold;
+    margin-bottom:10px;
+
+}
+
+.service-top p{
+ font-size: 1.3rem;
+ font-family: 'Assistant', sans-serif;
+ letter-spacing: .05rem;
+}
+
+#services .service-bottom{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.service-bottom .service-content{
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 10px 5%;
+	font-family: 'Assistant', sans-serif;
+
+}
+
+.service-content{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("images/lap.jpg");
+	background-size: cover;
+	background-position:center;
+	color: white;	
+}
+
+img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.service-bottom .service-content h2{
+margin-bottom: 10px;
+font-size: 1.5rem;
+font-family: 'Poppins', sans-serif;
+text-transform: uppercase;
+font-weight:bold;
+}
+
+.service-bottom .service-content
