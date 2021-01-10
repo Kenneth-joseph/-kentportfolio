@@ -138,6 +138,7 @@ font-weight: bold:
  font-size: 1.3rem;
  font-family: 'Assistant', sans-serif;
  letter-spacing: .05rem;
+ margin-bottom:30px;
 }
 
 #services .service-bottom{
@@ -181,4 +182,7 @@ text-transform: uppercase;
 font-weight:bold;
 }
 
-.service-bottom .service-content
+.service-bottom .service-content p{
+	text-align: left;
+	font-size: 1.2rem;
+}
