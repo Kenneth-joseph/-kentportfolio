@@ -130,7 +130,7 @@ font-weight: bold:
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5rem;
     font-weight:bold;
-    margin-bottom:10px;
+    margin-bottom:30px;
 
 }
 
@@ -186,3 +186,46 @@ font-weight:bold;
 	text-align: left;
 	font-size: 1.2rem;
 }
+
+/*end of service section*/
+
+.project .service-title{
+	font-size: 2.6rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5rem;
+    font-weight:bold;
+    margin-bottom:30px;
+
+}
+
+#project .project{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 100px 0;
+}
+
+#project .project-title h1{
+    text-align: center;
+}
+
+#project .projects{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+#project .pro-items{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
