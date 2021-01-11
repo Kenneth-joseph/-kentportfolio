@@ -194,7 +194,7 @@ font-weight:bold;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5rem;
     font-weight:bold;
-    margin-bottom:30px;
+    margin-bottom:50px;
 
 }
 
@@ -229,3 +229,60 @@ font-weight:bold;
 	border-radius: 10px;
 }
 
+#project .project-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:flex-start;
+	background-color:  #008080;
+	padding: 30px;
+	color: white;
+	flex-basis: 50%;
+	height: 100%;
+	font-family: 'Assistant', sans-serif;
+}
+
+#project .project-info h3{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.0rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+
+}
+
+#project .project-info h4{
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+
+#project .project-info p{
+	font-size: 1.2rem;
+}
+
+#project .proj-image{
+	flex-basis: 50%;
+	overflow: hidden;
+	height: 300px;
+	position: relative;
+}
+
+#project .proj-image:after{
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	opacity: .6;
+}
+
+#project .pro-items .proj-image img{
+    transition: .3s ease transform;
+
+}
+
+
+#project .pro-items:hover .proj-image{
+	transform: scale(1.1);
+}
