@@ -303,13 +303,15 @@ padding: 100px 20px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5rem;
     font-weight:bold;
-    margin-bottom:50px;
+    margin-bottom:30px;
 
 }
 
-.about .top{
-	width:400px;
-	height: 300px;
+#profile .about .top{
+	width:300px;
+	height: 360px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .about .bottom{
@@ -321,4 +323,41 @@ padding: 100px 20px;
     letter-spacing: .05rem;
 	margin-bottom:30px;
 	font-size: 1.3rem;
+}
+
+.about .bottom h5{
+    font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.2rem;
+	font-weight:bold;
+}
+
+.about .resume-btn{
+	padding: 10px 20px;
+	display: inline-block;
+	color: white;
+	background-color:black;
+	border: 2px solid #008080;
+	transition: .3 ease;
+	transition-property: background-color, color, font-weight;
+	animation-delay: 2s;
+	margin-bottom: 30px;
+}
+
+.about .resume-btn:hover{
+background-color: white;
+color:#008080;
+font-weight: bold;
+}
+.about .top .about-img{
+	position: relative;
+}
+.about .top .about-img::after{
+	content:'';
+	position: absolute;
+	right: -33px;
+	top: 25px;
+	height: 99%;
+	width: 98%;
+	border: 7px solid #008080;
+    z-index: -1;
 }
