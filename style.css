@@ -187,7 +187,13 @@ font-weight:bold;
 	font-size: 1.2rem;
 }
 
+
 /*end of service section*/
+
+
+
+/* project section  */
+
 
 .project .service-title{
 	font-size: 2.6rem;
@@ -350,6 +356,7 @@ font-weight: bold;
 }
 .about .top .about-img{
 	position: relative;
+	border: 7px solid white;
 }
 .about .top .about-img::after{
 	content:'';
@@ -360,4 +367,54 @@ font-weight: bold;
 	width: 98%;
 	border: 7px solid #008080;
     z-index: -1;
+}
+
+/* contact section */
+
+#contact .service-title{
+	font-size: 2.6rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5rem;
+    font-weight:bold;
+    margin-bottom:50px;
+	margin-top:100px;
+	text-align: center;
+
+}
+
+#contact .contact{  
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+	max-width:1200px; 
+	margin: 0 auto;
+}
+
+#contact .contact-items{
+	margin: 0 auto;
+}
+
+#contact .contact-item{
+width: 80%;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+padding: 30px;
+margin: 30px;
+display: flex;
+justify-content: center;  
+align-items: center;
+box-shadow: 0px 0px 18px 0 #5e7676 ;
+transition: .3s ease;
+}
+
+#contact .icon{
+	width: 70px;
+	margin: 0 auto;
+
+}
+
+#contact .contact-item:hover{
+	box-shadow: 0px 0px 5px 0 #5e7676 ;
+
 }
