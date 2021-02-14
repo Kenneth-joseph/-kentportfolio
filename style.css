@@ -1,6 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* header section  */
+
+#header{
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100vw;
+height: auto;
+}
+
+#header .header{
+min-height: 8vh;
+background-color: rgba(31, 30, 30, 0.24);
+}
+
+.header .nav-bar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 100%;
+max-width: 1300px;
+padding: 0 10px;
+}
+
+
+
 .start{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url("images/note.jpg");
     background-repeat: no-repeat;
@@ -327,8 +355,9 @@ padding: 100px 20px;
 .about .bottom p{
 	font-family: 'Assistant', sans-serif;
     letter-spacing: .05rem;
-	margin-bottom:30px;
+	margin-bottom:20px;
 	font-size: 1.3rem;
+	text-align: center;
 }
 
 .about .bottom h5{
@@ -346,7 +375,7 @@ padding: 100px 20px;
 	transition: .3 ease;
 	transition-property: background-color, color, font-weight;
 	animation-delay: 2s;
-	margin-bottom: 30px;
+	/* margin-bottom: 20px; */
 }
 
 .about .resume-btn:hover{
@@ -472,3 +501,99 @@ font-family: 'Assistant', sans-serif;
 #footer h3{
 	font-size: 1.5rem;
 } 
+
+
+/* media query for tablet mood  */
+
+@media only screen and (min-width:768px){
+	 .intro .port-btn{
+		 font-size: 1.2rem;
+		 padding: 15px 45px;
+	 }
+	 .intro h1{
+		 font-size: 4.0rem;
+	 }
+
+	 /* service section  */
+	 .service .service-bottom .service-content{
+		 flex-basis: 45%;
+		 margin: 2.5%;
+	 }
+
+	 /* service end  */
+
+	 /* projects section  */
+	 
+	 #project .pro-items{
+		flex-direction: row;
+	 }
+	 #project .pro-items{
+		 height: 400px;
+		 margin: 0;
+		 width: 100%;
+		 border-radius: 0;
+		
+	 }
+
+	 #project .projects .project-info{
+		 height: 100%;
+	 }
+	 #project .projects .proj-image{
+		 height: 100%;
+	 }
+
+	 #project .pro-items:nth-child(even){
+		 flex-direction: row-reverse;
+	 }
+
+	 /* about section  */
+
+	 #profile .about{
+		 flex-direction: row;
+	     /* margin-right: 10px; */
+	 }
+	 #profile .bottom p{
+		 text-align: left;
+	 }
+	 #profile .bottom {
+		 padding: 7px;
+	 }
+
+	 #profile .top{
+	 padding-right: 30px;
+
+	 }
+
+	 #profile .top .about-img{
+		 width: 270px;
+		 height: 470px;
+		 /* padding-right: 20px; */
+	 }
+
+	 /* contact section  */
+
+	 #contact .contact{
+		 flex-direction: column;
+		 padding: 100px 0;
+		 align-items: center;
+		 justify-content: center;
+		 min-width: 20vh;
+	 }
+
+	 #contact .contact-items{
+		 width: 100%;
+		 display: flex;
+		 flex-direction: row;
+	 }
+}
+
+/* desktop resposinveness */
+@media only screen and (min-width:1200px){
+
+	/* service section  */
+	.service .service-bottom .service-content{
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+
+}
