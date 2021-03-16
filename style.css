@@ -3,6 +3,9 @@
 
 /* header section  */
 
+html{
+	scroll-behavior: smooth;
+}
 #header{
 position: fixed;
 z-index: 10;
@@ -31,7 +34,7 @@ justify-content: center;
 #header .header{
 min-height: 8vh;
 background-color: rgba(31, 30, 30, 0.24);
-transition: .3s ease;
+transition: .3s ease background-color;
 }
 
 .header .nav-bar{
